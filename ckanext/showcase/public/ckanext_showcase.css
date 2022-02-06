@@ -1,0 +1,66 @@
+/* Custom style rules for ckanext-showcase */
+
+.context-info .module-content .smallest {
+  font-size: 13px;
+}
+
+.context-info .module-content .info .btn {
+  margin-top: 18px;
+}
+
+.actions {
+  top: 36px;
+  right: 25px;
+}
+
+.ckanext-showcase-edit-wrapper {
+  background-image: none;
+}
+
+.ckanext-showcase-image-container {
+  text-align: center;
+}
+
+.ckanext-showcase-image {
+  margin-bottom: 25px;
+}
+
+.ckanext-showcase-notes {
+  margin-bottom: 25px;
+}
+
+.ckanext-showcase-launch {
+  margin-bottom: 25px;
+}
+
+td.ckanext_showcase_pagination_footer {
+  padding: 0;
+}
+.ckanext_showcase_pagination_footer .pagination {
+  margin: 0;
+  border-top: none 0;
+}
+
+.module-narrow .nav-item > a {
+  word-break: break-word;
+}
+
+/* ----------------CUSTOM CHISEL CSS --------------------------*/
+.showcase-image {
+  height: 15em;
+  width: 15em;
+}
+.showcase-description {
+  margin: 3px;
+  padding: 3px;
+}
+.showcase-notes {
+  padding: 3px;
+}
+.showcase-wrapper {
+  margin-top: 8px;
+  background: rgba(241, 241, 241, 0.904);
+}
+.showcase-list-holder {
+  max-height: 100%;
+}
