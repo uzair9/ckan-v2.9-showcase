@@ -18,7 +18,7 @@ show_remove    - If True, show the remove button to remove showcase/dataset asso
     <div class="showcase-wrapper row">
         <div class="col-sm-2 col-md-2 col-lg-2">
             {% block image %}
-                <a href = "{{h.url_for(controller='ckanext.showcase.controller:ShowcaseController', action='read', id=package.name)}}">
+                <a href = "showcase/{{ package.name }}">
                 <img 
                     src="{{ package.image_display_url or h.url_for_static('/base/images/placeholder-group.png') }}" 
                     alt="{{ package.name }}" 
@@ -29,7 +29,10 @@ show_remove    - If True, show the remove button to remove showcase/dataset asso
         <div class="col-sm-10 col-md-10 col-lg-10">
             <div class="showcase-description">
                     {% block title %}
-                        <h3 class="media-heading">{{ h.link_to(h.truncate(title, truncate_title), h.url_for(controller='ckanext.showcase.controller:ShowcaseController', action='read', id=package.name)) }}</h3>
+                        {# <h3 class="media-heading">{{ h.link_to(h.truncate(title, truncate_title), h.url_for(controller='ckanext.showcase.controller:ShowcaseController', action='read', id=package.name)) }}</h3> #}
+                        <h3>
+                            <a style = "color: #00a1ac;" href = "showcase/{{ package.name }}"> {{ package.title }} </a>
+                        </h3>
                     {% endblock %}
                     {% block datasets %}
                     {% if package.num_datasets %}
